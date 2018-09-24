@@ -1,15 +1,16 @@
 package JackieWu;
 
-public class Main {
-        public static int sumUpTo(int n){
-            int x = 0;
-            for (int i = 0; i < n + 1; i++) {
-                x = x + i;
-            }
-            return x;
-        }
-        public static void main(String[] args){
-            System.out.println(sumUpTo(2));
-        }
+import static JackieWu.jWuLib.*;
 
+public class Main {
+
+
+    public static void main(String[] args)
+    {
+        System.out.println(isPalindrome("dog"));
+        System.out.println(dateStr("12/13/1212"));
+        System.out.println(sumUpTo(5));
+        primePrinter(5);
+        fooBarBaz(15);
+    }
     }
